@@ -3,6 +3,11 @@ source $SECRETS_KEYS
 echo "dppass: $DB_PASS"
 docker stop dp_db_cfgsvc
 docker rm dp_db_cfgsvc
+docker stop cwcget
+docker rm cwcwget
+docker stop localdb
+docker rm localdb
+
 
 
 echo "------------------------------list of available user---------------------------------"
